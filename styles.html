@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            color: midnightblue;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 48px;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: rgb(194, 187, 199);
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: normal;
+        }
+
+        div {
+            background: greenyellow;
+            border: rgb(6, 112, 20) 5px solid;
+            padding: 3px;
+        }
+
+        div10 {
+            padding: 3px 15px;
+            border: PowderBlue 5 px solid;
+            border-radius: 20px;
+        }
+
+        div11 {
+            padding: 3px 10px;
+            border: PowderBlue 5px double;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        li {
+            color: blueviolet;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        ul>li {
+            color: lavenderblush;
+        }
+
+        .verde {
+            color: green;
+        }
+
+        table {
+            border: blue 10px outset;
+        }
+
+        th {
+            border: PowderBlue 3px solid;
+        }
+
+        td {
+            border: PowderBlue 3px solid;
+        }
+        a{
+            color: sandybrown;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-weight: 900;
+            font-style: oblique;
+        }
+        a[href="https://www.upiita.ipn.mx"]{
+            color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1><a href=""></a></h1>
+    </div>
+    <p></p>
+    <div10 class="verde">
+
+        Y el cuervo dijo: "Nunca más"
+
+    </div10>
+    <p></p>
+    <div11>
+        Y el cuarvo dijo: "Nunca más"
+
+    </div11>
+    <p></p>
+    <table border="10" CELLPADDING=10 BGCOLOR="cyan" style="text-align:center;">
+        <tr>
+            <td></td>
+            <td><strong>Lunes</strong></td>
+            <td><strong>Martes</strong></td>
+            <td><strong>Miércoles</strong></td>
+        </tr>
+        <tr>
+            <td>Mate</td>
+            <td ROWSPAN=2>7-9</td>
+            <td COLSPAN=2>9-11</td>
+        </tr>
+    </table>
+    <br>
+    <ol>
+        <li>
+            HTML/CSS
+            <ul>
+                <li>Elementos básicos</li>
+                <li>Estilos</li>
+            </ul>
+        </li>
+        <li>GIT</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>SQL, Model 6 Migrations</li>
+        <li>Javascript</li>
+        <li>User Interfaces</li>
+        <li>Testing, CI/CD</li>
+        <li>Scalability and Security</li>
+
+    </ol>
+    <div>
+        <p></p>
+        <div10>
+            Si deseas más información, consulta las siguientes páginas:
+        </div10><p></p>
+
+        <ul>
+            <li><a href="https://www.upiita.ipn.mx">UPIITA</a></li>
+            <li><a href="https://www.escom.ipn.mx">ESCOM</a></li>
+            <li><a href="https://www.ipn.mx">IPN</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
