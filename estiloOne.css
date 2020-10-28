@@ -1,0 +1,26 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 48px;
+    font-weight: 500;
+}
+h2{
+    background: rgb(179, 198, 204);
+    color: rgb(89, 6, 97);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
+div{
+    background: greenyellow;
+    border-top: rgb(86, 12, 110) 4px dashed;
+    border-right: green 8px double;
+    border-bottom: white 10px groove;
+    border-left: rgb(100, 15, 115) 12px outset;
+    padding: 3px;
+}
