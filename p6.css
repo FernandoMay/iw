@@ -2,3 +2,10 @@ header{
     background-color: rebeccapurple;
     color: whitesmoke;
 }
+.main{
+    background-color: burlywood;
+}
+aside{
+    background: rgb(51,75,153);
+    color: whitesmoke;
+}
