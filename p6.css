@@ -9,3 +9,19 @@ aside{
     background: rgb(51,75,153);
     color: whitesmoke;
 }
+.color1{
+    background: rgb(192, 176, 157);
+}
+.color2{
+    background: rgb(153, 156, 101);
+}
+.color3{
+    background: rgb(192, 176, 157);
+}
+.color4{
+    background: rgb(153, 156, 101);
+}
+footer{
+    background: rgb(23, 158, 211);
+    color: blue;
+}
