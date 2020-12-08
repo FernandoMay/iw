@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $database = "iwdatos";
+    $password = "rosquillas16";
+
+    $enlace = mysqli_connect($servername,$username,$password,$database);
+
+    if(!$enlace){
+        echo("Connection failed: ",mysqli_connect_error());
+    }
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
@@ -31,7 +44,7 @@
                 <label for="telefono">Teléfono: </label>
                 <input type="tel" class="form-control" id="telefono" name="telefono" required>
             </div>
-            <input type="submit" class="btn btn-primary btn-lg active" Enviar name="registro" value="registro">
+            <input type="submit" class="btn btn-primary btn-lg active" name="registro" value="registro">
             <br>
         </form>
         <br>
@@ -50,4 +63,15 @@
         crossorigin="anonymous"></script>
 </body>
 
+<?php
+    if(isset($_POST[''])){
+        $datoaenviar = $_POST[""];
+        $variableinsertardatos = "INSERT INTO iwdatos VALUES ('$datos')";
+        $variableejecutar = mysqli_query($enlace,$variableinsertardatos);
+        if(!$variableejecutar{ echo "Error en sql"; }
+        mysqli_close($variableejecutar);
+    }
+?>
+
 </html>
+
