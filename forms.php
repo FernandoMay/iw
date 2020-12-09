@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
-    $servername = "localhost";
+    $server = "localhost";
     $username = "root";
     $database = "iwdatos";
-    $password = "rosquillas16";
+    $password = "";
 
-    $enlace = mysqli_connect($servername,$username,$password,$database);
+    $enlace = mysqli_connect($server,$username,$password,$database);
 
     if(!$enlace){
-        echo("Connection failed: ",mysqli_connect_error());
+        // echo("Connection failed: "mysqli_connect_error());
+        echo("Error al conectar a la db");
     }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -44,7 +45,7 @@
                 <label for="telefono">Teléfono: </label>
                 <input type="tel" class="form-control" id="telefono" name="telefono" required>
             </div>
-            <input type="submit" class="btn btn-primary btn-lg active" name="registro" value="registro">
+            <input type="submit" class="btn btn-primary btn-lg active" name="registro" value="Registro">
             <br>
         </form>
         <br>
@@ -62,16 +63,18 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 </body>
+</html>
 
 <?php
-    if(isset($_POST[''])){
-        $datoaenviar = $_POST[""];
-        $variableinsertardatos = "INSERT INTO iwdatos VALUES ('$datos')";
-        $variableejecutar = mysqli_query($enlace,$variableinsertardatos);
-        if(!$variableejecutar{ echo "Error en sql"; }
-        mysqli_close($variableejecutar);
+    if(isset($_POST['registro'])){
+        $nombre = $_POST["nombre"];
+        $email = $_POST["email"];
+        $telefono = $_POST["telefono"];
+
+        $insertardatos = "INSERT INTO iwdatos VALUES ('$nombre','$email,'$telefono')";
+        $ejecutar = mysqli_query($enlace,$insertardatos);
+        if(!$ejecutar){ echo "Error en sql"; }
+        //mysqli_close($ejecutar);
     }
 ?>
-
-</html>
 
