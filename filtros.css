@@ -1,0 +1,26 @@
+.contenedorfoto{
+    width: 500px;
+    border: 1px solid #000;
+    overflow: hidden;
+    line-height: 0;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.contenedorF{
+    width: 100%;
+    border: 1px solid #000;;
+    overflow: hidden;
+}
+
+.contenedorfoto img:hover{
+    filter: none;
+    transform: scale(1.4);
+}
+
+#foto_blur:hover{
+    filter: blur(150%);
+}
+#foto_brightness:hover{
+    filter: brightness(150%);
+}
