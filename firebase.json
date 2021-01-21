@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "final",
+    "site": "exagonosportsclub",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
